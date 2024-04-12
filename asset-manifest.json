@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nxveen7164/static/css/main.d88f0c73.css",
+    "main.js": "/nxveen7164/static/js/main.28186332.js",
+    "static/media/logo (1).jpg": "/nxveen7164/static/media/logo (1).3ed63fbd68ff085f857b.jpg",
+    "static/media/logo (3).jpg": "/nxveen7164/static/media/logo (3).bf314660ccde1ffda912.jpg",
+    "index.html": "/nxveen7164/index.html",
+    "main.d88f0c73.css.map": "/nxveen7164/static/css/main.d88f0c73.css.map",
+    "main.28186332.js.map": "/nxveen7164/static/js/main.28186332.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d88f0c73.css",
+    "static/js/main.28186332.js"
+  ]
+}
