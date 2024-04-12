@@ -1,0 +1,25 @@
+/* Footer.css */
+footer {
+    background-color: #393a3b; /* Change background color to a shade of blue */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    margin: 0 10px;
+    color: #fff; /* Change link color to white */
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  .footer-info {
+    color: #ccc; /* Change info text color to light gray */
+  }
+  

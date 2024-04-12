@@ -1,0 +1,77 @@
+.contact{
+    display: flex;
+    align-items: center;
+    padding: 20px 5% 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #e8e8e8;
+}
+.contact_left{
+    flex-basis: 48%;
+    background: #fff;
+    padding: 40px;
+
+}
+.contact_right{
+    flex-basis: 48%;
+}
+.contact_left .contact_h1 {
+    font-size: 28px; /* Increase font size */
+    color: #2c3e50; /* Dark blue color */
+    font-family: Arial, sans-serif; /* Choose font family */
+    font-weight: bold; /* Bold font weight */
+    text-transform: uppercase; /* Convert text to uppercase */
+    margin-bottom: 20px; /* Increase margin bottom */
+    text-align: center; /* Center align text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
+    letter-spacing: 2px; /* Increase letter spacing */
+    line-height: 1.2; /* Increase line height */
+  }
+  
+.contact_left .contact_input{
+    border: none;
+    outline: none;
+    background: #e8e8e8;
+    padding: 4px 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contact_left .contact_submitinput{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    width: 100%;
+    text-align: center;
+}
+.contact_left .contact_submitinput:hover{
+  background-color: #0067cc;
+}
+.contact_right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 40px;
+    border-radius: 15px;
+}
+.contact_right .contact_h3{
+    color: #007bff;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+    .contact{
+        gap: 20px;
+    }
+    .contact_left{
+        flex-basis: 100%;
+    }
+    .contact_right{
+        flex-basis: 100%;
+    }
+}

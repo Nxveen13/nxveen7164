@@ -1,0 +1,84 @@
+/* Nav.css */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; /* Light beige background */
+  padding: 19px 5%; /* Adjust padding for better balance */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar-logo .logo {
+  color: #333; /* Dark gray for logo text */
+  font-family: "Montserrat", sans-serif; /* Modern sans-serif font */
+  font-size: 28px; /* Increase logo font size slightly */
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px; /* Subtle letter spacing for improved readability */
+}
+.navbar-logo .logo span {
+  color: #007bff;
+}
+ul {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Adjust gap for spacing between list items */
+  list-style: none;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+ul li .link {
+  font-family: "Open Sans", sans-serif; /* Another modern sans-serif font */
+  font-size: 14px; /* Smaller font size for navigation links */
+  color: #000;
+  font-weight: 300;
+  position: relative;
+}
+ul li .link::after {
+  position: absolute;
+  content: '';
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: 0.5s;
+}
+ul li .link:hover::after{
+  width: 100%;
+}
+
+.menu_icon {
+  display: none; /* Hide menu icon initially */
+}
+
+@media screen and (max-width: 900px) {
+  /* Responsive design for smaller screens */
+  ul {
+    width: 50%; /* Full-width menu on small screens */
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(255,255,255, 0.2); /* Consistent background color */
+    backdrop-filter: blur(10px)saturate(100%) ;
+    position: absolute;
+    top: 70px; /* Align menu to the top */
+    left: -100%; /* Hide menu initially */
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 5%;
+    align-items: start; /* Center links vertically */
+    transition: all 0.3s ease; /* Smoother transition */
+
+  }
+
+  ul.show {
+    left: 0; /* Show menu when triggered */
+  }
+
+  .menu_icon {
+    display: block; /* Show menu icon on small screens */
+    font-size: 24px; /* Larger icon size */
+    cursor: pointer;
+  }
+}

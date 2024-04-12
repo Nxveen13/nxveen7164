@@ -1,0 +1,80 @@
+.quiz_app {
+    width: 100%;
+    height: auto;
+    padding: 20px 5%;
+  }
+  .root {
+    background: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #ccc;
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 5px;
+  }
+  .quizBox {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+  }
+  .quizBox h3 {
+    margin-bottom: 5px;
+  }
+  .quizBox p{
+    margin-bottom: 5px;
+  }
+  .quiz_app h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: solid #007bff underline;
+  }
+  .quiz_app button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  .quiz_app button:hover {
+    background-color: #0067cc;
+  }
+  .quiz_app .score {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .correctanswer {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    padding: 5px 0;
+  }
+  .correctanswer span {
+    font-size: 15px;
+    font-weight: 600;
+    color: green;
+  }
+  @media screen and (max-width: 900px) {
+    html {
+      font-size: 75%;
+    }
+    .root{
+      margin-bottom: 10px;
+    }
+    .quiz_app h1{
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 70%;
+    }
+  }
+  

@@ -1,0 +1,49 @@
+.aptitude{
+    --gap: 20px;
+    --content-col: 3;
+    display: grid;
+    grid-template-columns: repeat(var(--content-col),1fr);
+    padding: var(--gap);
+    margin: 40px 0;
+    padding: 0;
+}
+.aptitude_box{
+    text-align: center;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.box2 :any-link{
+    color: #fff;
+}
+.box2{
+    background: #007bff;
+    padding: 10px 0;
+}
+.box2 h1{
+    color: #fff;
+    margin: 10px 0;
+    text-shadow: 0 1px 1px #292e32;
+}
+.box1 :any-link{
+    color: #007bff;
+}
+.box1{
+    padding: 10px 0;
+    background: #e6e9f0;
+}
+.box1 h1{
+    margin: 10px 0;
+    color: #007bff;
+    text-shadow: 0 1px 1px #007bff;
+}
+@media (max-width:900px) {
+    .aptitude{
+        --content-col: 2;
+    }
+}
+@media (max-width:600px) {
+    .aptitude{
+        --content-col: 1;
+    }
+}
